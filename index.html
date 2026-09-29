@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Visual Gallery | Image Gallery</title>
+
+    <meta name="description"
+        content="Visual Gallery - A responsive image gallery built using HTML, CSS and JavaScript.">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         HEADER
+    ========================== -->
+
+    <header class="header">
+
+        <div class="container nav-container">
+
+            <a href="#home" class="logo">
+                Visual<span>Gallery</span>
+            </a>
+
+            <nav class="nav-links">
+
+                <a href="#home">Home</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#about">About</a>
+
+            </nav>
+
+            <!-- Mobile Menu -->
+            <button class="menu-btn" aria-label="Open menu">
+                ☰
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         HERO SECTION
+    ========================== -->
+
+    <main>
+
+        <section class="hero" id="home">
+
+            <div class="container hero-content">
+
+                <p class="hero-subtitle">
+                    CREATIVE VISUAL COLLECTION
+                </p>
+
+                <h1>
+                    Explore the World
+                    <br>
+                    Through Images
+                </h1>
+
+                <p class="hero-description">
+                    Discover beautiful moments, places and architecture
+                    through a carefully selected visual collection.
+                </p>
+
+                <a href="#gallery" class="hero-btn">
+                    Explore Gallery
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             GALLERY SECTION
+        ========================== -->
+
+        <section class="gallery-section" id="gallery">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-subtitle">
+                        VISUAL COLLECTION
+                    </p>
+
+                    <h2>
+                        Explore Our Gallery
+                    </h2>
+
+                    <p>
+                        Browse through different categories and
+                        discover inspiring visuals.
+                    </p>
+
+                </div>
+
+
+                <!-- FILTER BUTTONS -->
+
+                <div class="filters">
+
+                    <button
+                        class="filter-btn active"
+                        data-filter="all">
+                        All
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="nature">
+                        Nature
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="travel">
+                        Travel
+                    </button>
+
+                    <button
+                        class="filter-btn"
+                        data-filter="architecture">
+                        Architecture
+                    </button>
+
+                </div>
+
+
+                <!-- =========================
+                     GALLERY GRID
+                ========================== -->
+
+                <div class="gallery-grid">
+
+
+                    <!-- 1. Mountain Escape -->
+
+                    <div
+                        class="gallery-item"
+                        data-category="nature">
+
+                        <img
+                            src="assets/image1.jpeg"
+                            alt="Gallery Image">
+
+                        <div class="gallery-overlay">
+
+                            <div>
+                                <span>NATURE</span>
+
+                                <h3>
+                                    Mountain Escape
+                                </h3>
+                            </div>
+
+                            <button
+                                class="view-btn"
+                                aria-label="View Mountain Escape">
+                                ↗
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 2. Forest Dreams -->
+
+                    <div
+                        class="gallery-item"
+                        data-category="nature">
+
+                        <img
+                            src="assets/image2.jpeg"
+                            alt="Gallery Image">
+
+                        <div class="gallery-overlay">
+
+                            <div>
+                                <span>NATURE</span>
+
+                                <h3>
+                                    Forest Dreams
+                                </h3>
+                            </div>
+
+                            <button
+                                class="view-btn"
+                                aria-label="View Forest Dreams">
+                                ↗
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 3. Wanderlust -->
+
+                    <div
+                        class="gallery-item"
+                        data-category="travel">
+
+                        <img
+                            src="assets/image3.jpeg"
+                            alt="Gallery Image">
+
+                        <div class="gallery-overlay">
+
+                            <div>
+                                <span>TRAVEL</span>
+
+                                <h3>
+                                    Wanderlust
+                                </h3>
+                            </div>
+
+                            <button
+                                class="view-btn"
+                                aria-label="View Wanderlust">
+                                ↗
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 4. Road Trip -->
+
+                    <div
+                        class="gallery-item"
+                        data-category="travel">
+
+                        <img
+                            src="assets/image4.jpeg"
+                            alt="Gallery Image">
+
+                        <div class="gallery-overlay">
+
+                            <div>
+                                <span>TRAVEL</span>
+
+                                <h3>
+                                    Road Trip
+                                </h3>
+                            </div>
+
+                            <button
+                                class="view-btn"
+                                aria-label="View Road Trip">
+                                ↗
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 5. Modern Lines -->
+
+                    <div
+                        class="gallery-item"
+                        data-category="architecture">
+
+                        <img
+                            src="assets/image5.jpeg"
+                            alt="Gallery Image">
+
+                        <div class="gallery-overlay">
+
+                            <div>
+                                <span>ARCHITECTURE</span>
+
+                                <h3>
+                                    Modern Lines
+                                </h3>
+                            </div>
+
+                            <button
+                                class="view-btn"
+                                aria-label="View Modern Lines">
+                                ↗
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 6. Urban Beauty -->
+
+                    <div
+                        class="gallery-item"
+                        data-category="architecture">
+
+                        <img
+                            src="assets/image6.jpeg"
+                            alt="Gallery Image">
+
+                        <div class="gallery-overlay">
+
+                            <div>
+                                <span>ARCHITECTURE</span>
+
+                                <h3>
+                                    Urban Beauty
+                                </h3>
+                            </div>
+
+                            <button
+                                class="view-btn"
+                                aria-label="View Urban Beauty">
+                                ↗
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 7. Golden Sunset -->
+
+                    <div
+                        class="gallery-item"
+                        data-category="nature">
+
+                        <img
+                            src="assets/image7.jpeg"
+                            alt="Gallery Image">
+
+                        <div class="gallery-overlay">
+
+                            <div>
+                                <span>NATURE</span>
+
+                                <h3>
+                                    Golden Sunset
+                                </h3>
+                            </div>
+
+                            <button
+                                class="view-btn"
+                                aria-label="View Golden Sunset">
+                                ↗
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 8. City Lights -->
+
+                    <div
+                        class="gallery-item"
+                        data-category="travel">
+
+                        <img
+                            src="assets/image8.jpeg"
+                            alt="Gallery Image">
+
+                        <div class="gallery-overlay">
+
+                            <div>
+                                <span>TRAVEL</span>
+
+                                <h3>
+                                    City Lights
+                                </h3>
+                            </div>
+
+                            <button
+                                class="view-btn"
+                                aria-label="View City Lights">
+                                ↗
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT SECTION
+        ========================== -->
+
+        <section class="about-section" id="about">
+
+            <div class="container about-content">
+
+                <p class="section-subtitle">
+                    ABOUT THE PROJECT
+                </p>
+
+                <h2>
+                    A Simple Gallery,
+                    <br>
+                    Designed for Visual Discovery
+                </h2>
+
+                <p>
+                    Visual Gallery is a responsive image gallery
+                    developed using HTML5, CSS3 and JavaScript.
+                    It includes category filtering, interactive
+                    image viewing, smooth transitions and
+                    responsive design for different screen sizes.
+                </p>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FULL SCREEN LIGHTBOX
+    ========================== -->
+
+    <div
+        class="lightbox"
+        id="lightbox">
+
+
+        <!-- CLOSE BUTTON -->
+
+        <button
+            class="lightbox-close"
+            id="lightboxClose"
+            aria-label="Close image">
+            &times;
+        </button>
+
+
+        <!-- PREVIOUS -->
+
+        <button
+            class="lightbox-prev"
+            id="lightboxPrev"
+            aria-label="Previous image">
+            &#10094;
+        </button>
+
+
+        <!-- IMAGE AREA -->
+
+        <div class="lightbox-content">
+
+
+            <!-- ZOOM CONTROLS -->
+
+            <div class="zoom-controls">
+
+                <button
+                    id="zoomOut"
+                    title="Zoom Out">
+                    −
+                </button>
+
+                <button
+                    id="zoomReset"
+                    title="Reset Zoom">
+                    100%
+                </button>
+
+                <button
+                    id="zoomIn"
+                    title="Zoom In">
+                    +
+                </button>
+
+            </div>
+
+
+            <!-- LARGE IMAGE -->
+
+            <img
+                id="lightboxImage"
+                src=""
+                alt="">
+
+
+            <!-- IMAGE TITLE -->
+
+            <p id="lightboxTitle"></p>
+
+        </div>
+
+
+        <!-- NEXT -->
+
+        <button
+            class="lightbox-next"
+            id="lightboxNext"
+            aria-label="Next image">
+            &#10095;
+        </button>
+
+
+    </div>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <p>
+                © 2026 Visual Gallery. All Rights Reserved.
+            </p>
+
+            <p>
+                Built with HTML, CSS & JavaScript
+            </p>
+
+        </div>
+
+    </footer>
+
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
